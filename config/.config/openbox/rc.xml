@@ -410,10 +410,10 @@ r   <drawContents>yes</drawContents>
         </startupnotify>
         <command>urxvtc</command>
       </action>
-  </keybind>
-  <keybind key="W-0">
+    </keybind>
+    <keybind key="W-0">
       <action name="ToggleDecorations"/>
-  </keybind>
+    </keybind>
     <keybind key="W-space">
       <action name="Execute">
         <name>urxvt-run</name>
@@ -853,10 +853,10 @@ r   <drawContents>yes</drawContents>
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-<application class="Firefox">
-    <decor>no</decor>
-</application>    
-  <!--
+    <application class="Firefox">
+      <decor>no</decor>
+    </application>
+    <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
   # you may use one or more of the name/class/role/title/type rules to specify
