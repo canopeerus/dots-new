@@ -12,7 +12,7 @@ URxvt.italicFont:xft:Hack:style=Italic:size=9
 URxvt.boldItalicFont:xft:Hack:style=Bold Oblique:size=9
 URxvt.scrollBar:false
 URxvt*iconFile: /home/canopy/Downloads/App-Terminal-icon.png
-!URxvt.letterSpace:-1
+URxvt.letterSpace:-1
 ! Base16 Classic Dark
 ! Scheme: Jason Heeris (http://heeris.id.au)
 
