@@ -39,6 +39,7 @@ dbdir = homedir + "/.config//pm"
 dbfil = dbdir + "/db.json"
 dbfil_old = dbfil + ".old"
 prog_ver = "0.0.1"
+proj_dir = homedir + "/code"
 
 # function declarations
 def query_yes_no(question, default="yes"):
@@ -98,19 +99,35 @@ def backup_old_db():
     
 def pm_db_init():
     if os.path.isfile(dbfil) and os.path.isfile(dbfil_old):
-        print("There is a database file and a backup file already available!!")
+        sys.stdout.write("There is a database file and a backup file already available!!\n")
         user_choice1 = query_yes_no("Delete old db and backup current db file?")
         if user_choice1 == True:
             backup_old_db()
         else:
             sys.stdout.write("Operation aborted!\n")
             sys.exit(2)
+    elif os.path.isfile(dbfil):
+        sys.stdout.write("Found existing database file. Backing it up to db.json.old\n")
+    
+    sys.stdout.write("Beginnning pm init process...\n")
+    sys.stdout.write("Using projects location "+proj_dir+"\n")
+    all_p_files = os.listdir(proj_dir)
+    if len(all_p_files) == 0:
+        sys.stdout.write("No project directories found in central code directory!!\n")
+        sys.exit(3)
     else:
-        print("Project database not found")
+        print(len(all_p_files))
+        for i in all_p_files:
+            if not (os.path.isdir(i)):
+                all_p_files.remove(i)
+        print(all_p_files)
+    
+
+
 
 def main_func(argv):
     try:
-        options,args = getopt.getopt(argv,"hdiv:",["help","delete","init","version"])
+        options,args = getopt.getopt(argv,"hdiv",["--help","--init","--delete","--version"])
     except getopt.GetoptError:
         sys.stdout.write("Unsupported option\n")
         print_help()
@@ -120,12 +137,12 @@ def main_func(argv):
     for opt,arg in options:
         if opt in ("-h","--help"):
             print_help()
-        elif opt in ("-v","--version"):
-            print_version()
-        elif opt in ("-i","--init"):
-            pm_db_init()
         elif opt in ("-d","--delete"):
             delete_db()
             sys.exit(2)
+        elif opt in ("-i","--init"):
+            pm_db_init()
+        elif opt in ("-v","--version"):
+            print_version()
 
 main_func(sys.argv[1:])        
