@@ -32,10 +32,10 @@ import sys
 import json
 import getopt
 
-# some shitty global variable declarations for directory and file locations
+# some global variable declarations for directory and file locations
 # will need to clean this up to not make these options hardcoded
 homedir = os.getenv("HOME")
-dbdir = homedir + "/.config//pm"
+dbdir = homedir + "/.config/pm"
 dbfil = dbdir + "/db.json"
 dbfil_old = dbfil + ".old"
 prog_ver = "0.0.1"
@@ -77,10 +77,11 @@ def print_help():
     sys.stdout.write("usage : pm [-ildhv] [ -m active,inactive,abandoned,complete]\n")
     sys.exit(1)
 
-def delete_db():
+def delete_db_arg_func():
     if os.path.isfile(dbfil):
         if query_yes_no("Are you sure you want to delete the database?"):
             os.remove(dbfil)
+            sys.stdout.write("Project database successfully deleted\n")
         else:
             sys.stdout.write("Operation aborted\n")
             sys.exit(1)
@@ -92,23 +93,29 @@ def print_version():
     sys.stdout.write("License:MIT\n")
     sys.exit(1)
 
-def backup_old_db():
-    os.remove(dbfil_old)
-    os.rename(dbfil,dbfil_old)
-    os.remove(dbfil)
-    
+def backup_db(db_option = "current"):
+    if db_option == "old":
+        os.remove(dbfil_old)
+        os.rename(dbfil,dbfil_old)
+        os.remove(dbfil)
+    elif db_option == "current":
+        os.rename(dbfil,dbfil_old)
+        
 def pm_db_init():
     if os.path.isfile(dbfil) and os.path.isfile(dbfil_old):
         sys.stdout.write("There is a database file and a backup file already available!!\n")
         user_choice1 = query_yes_no("Delete old db and backup current db file?")
         if user_choice1 == True:
-            backup_old_db()
+            backup_db("old")
         else:
             sys.stdout.write("Operation aborted!\n")
             sys.exit(2)
     elif os.path.isfile(dbfil):
         sys.stdout.write("Found existing database file. Backing it up to db.json.old\n")
+        backup_db("current")
     
+    if not os.path.isdir(dbdir):
+        os.mkdir(dbdir)
     sys.stdout.write("Beginnning pm init process...\n")
     sys.stdout.write("Using projects location "+proj_dir+"\n")
     all_p_files = os.listdir(proj_dir)
@@ -116,14 +123,27 @@ def pm_db_init():
         sys.stdout.write("No project directories found in central code directory!!\n")
         sys.exit(3)
     else:
-        print(len(all_p_files))
+        db_file_out = open(dbfil,'w+')
+        proj_json_obj = {}
+        proj_json_obj['project']=[]
+        count = 0
         for i in all_p_files:
-            if not (os.path.isdir(i)):
-                all_p_files.remove(i)
-        print(all_p_files)
-    
+            if os.path.isdir(proj_dir+"/"+i):
+                count += 1
+                proj_json_obj['project'].append({
+                    'name':i,
+                    'status':'active',
+                    'author':'canopeerus'
+                    })
+        sys.stdout.write("Found "+str(count)+" projects\n")
+        json.dump(proj_json_obj,db_file_out)
+        db_file_out.close()
+        sys.stdout.write("Init process complete. Database created at "+dbfil+"\n")
 
-
+def print_json():
+    json_file_in = open(dbfil,'r')
+    datastore = json.load(json_file_in)
+    print(datastore["project"])
 
 def main_func(argv):
     try:
@@ -138,7 +158,7 @@ def main_func(argv):
         if opt in ("-h","--help"):
             print_help()
         elif opt in ("-d","--delete"):
-            delete_db()
+            delete_db_arg_func()
             sys.exit(2)
         elif opt in ("-i","--init"):
             pm_db_init()
