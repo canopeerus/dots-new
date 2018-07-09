@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Adapta</name>
+    <name>ArchLabs-Light</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -417,7 +417,7 @@ r   <drawContents>yes</drawContents>
     <keybind key="W-space">
       <action name="Execute">
         <name>urxvt-run</name>
-        <command>rofi -show drun </command>
+        <command>rofi -show run </command>
       </action>
     </keybind>
     <keybind key="W-S-l">
