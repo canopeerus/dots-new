@@ -417,7 +417,7 @@ r   <drawContents>yes</drawContents>
     <keybind key="W-space">
       <action name="Execute">
         <name>urxvt-run</name>
-        <command>rofi -show drun -show-icons</command>
+        <command>rofi -show run </command>
       </action>
     </keybind>
     <keybind key="W-S-l">
