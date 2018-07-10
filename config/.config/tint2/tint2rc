@@ -10,7 +10,7 @@ border_sides = TBLR
 background_color = #000000 100
 border_color = #000000 0
 background_color_hover = #000000 100
-border_color_hover = #000000 0
+border_color_hover = #000000  0
 background_color_pressed = #000000 100
 border_color_pressed = #000000 0
 
