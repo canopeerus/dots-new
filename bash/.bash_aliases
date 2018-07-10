@@ -6,4 +6,3 @@ function aps()
 {
     zypper search $1 | less
 }
-alias upd='sudo zypper dup --allow-vendor-change'
