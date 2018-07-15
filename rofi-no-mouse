@@ -1,0 +1,5 @@
+#!/bin/sh
+xinput --disable 11
+rofi -show run
+xinput --enable 11
+
