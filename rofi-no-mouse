@@ -1,4 +1,6 @@
 #!/bin/sh
+# A script to disable touchpad when rofi is running because my fat hands 
+# keep touching on the touchpad.
 xinput --disable 11
 rofi -show run
 xinput --enable 11
