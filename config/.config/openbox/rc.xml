@@ -416,8 +416,8 @@ r   <drawContents>yes</drawContents>
     </keybind>
     <keybind key="W-space">
       <action name="Execute">
-        <name>urxvt-run</name>
-        <command>rofi -show run </command>
+        <name>rofi</name>
+        <command>rofi-no-mouse</command>
       </action>
     </keybind>
     <keybind key="W-S-l">
