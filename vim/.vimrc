@@ -13,13 +13,12 @@ filetype plugin indent on                  " required
 syntax on
 set hidden
 set backspace=indent,eol,start
-let g:airline_powerline_fonts=1
 let mapleader = ","
 nmap <leader>ne :NERDTreeToggle<cr>
 nmap <leader>nf :NERDTreeFocus<cr>
 map ; :
-let g:airline_theme="base16"
 " set the runtime path to include Vundle and initialize
+let g:airline_powerline_fonts=1
 set rtp+=~/.vim/bundle/Vundle.vim
 set pastetoggle=<F2>
 noremap <silent> <Leader>vs :<C-u>let @z=&so<CR>:set so=0 noscb<CR>:bo vs<CR>Ljzt:setl scb<CR><C-w>p:setl scb<CR>:let &so=@z<CR>
