@@ -408,7 +408,7 @@ r   <drawContents>yes</drawContents>
           <enabled>false</enabled>
           <name>urxvt</name>
         </startupnotify>
-        <command>st</command>
+        <command>urxvtc</command>
       </action>
     </keybind>
     <keybind key="W-0">
