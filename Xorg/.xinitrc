@@ -9,5 +9,5 @@ xset b off &
 xset -dpms &
 xset r rate 220 60 &
 #Starting urxvt daemon
-#urxvtd -f -q -o
+urxvtd -f -q -o
 exec openbox-session
