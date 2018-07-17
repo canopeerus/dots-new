@@ -13,7 +13,6 @@
 #fi
 
 ./.fehbg 
-xcompmgr -cfF -t-9 -l-11 -r9 -o.95 -D1 &
 dunst &
 nm-applet &
 tint2 &
