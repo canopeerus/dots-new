@@ -1,2 +1,2 @@
 # dots-new
-my dots
+dot files for my Linux Openbox setup. It is mostly distro-agnostic
