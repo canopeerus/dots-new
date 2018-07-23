@@ -17,4 +17,4 @@ function ws()
 }
 alias ..='cd ..'
 alias ...='cd ../..'
-alias ionlogin='lynx https://mahe2.dvois.com/24online/webpages/client.jsp'
+alias ionlogin='elinks https://mahe2.dvois.com/24online/webpages/client.jsp'
