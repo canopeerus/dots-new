@@ -15,6 +15,9 @@ function ws()
     fil="$1 ->"
     command ls -al /usr/bin | grep "$fil"
 }
+if [ $TERM = "st-256color" ]; then
+    xseticon -id $WINDOWID ~/Downloads/App-Terminal-icon.png
+fi
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ionlogin='elinks https://mahe2.dvois.com/24online/webpages/client.jsp'
