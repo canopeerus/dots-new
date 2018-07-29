@@ -1,6 +1,6 @@
 function ins()
 {
-    rpm -qa | grep $1 | less
+    rpm -qa | grep -i $1 | less
 }
 function aps()
 {

@@ -8,7 +8,6 @@ export PS1=" \[\e[00;34m\]$ \W \[\e[0m\]"
 alias e=$EDITOR
 alias se='sudoedit'
 alias sl='ls'
-
 [ -f ~/.bash_aliases ] && . ~/.bash_aliases
 function ws()
 {
