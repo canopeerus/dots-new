@@ -33,6 +33,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline-themes'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

@@ -2,7 +2,7 @@ function ins()
 {
     rpm -qa | grep -i $1 | less
 }
-function aps()
+function zps()
 {
     zypper search $1 | less
 }
