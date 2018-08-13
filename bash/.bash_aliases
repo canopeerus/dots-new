@@ -6,4 +6,4 @@ function zps()
 {
     zypper search $1 | less
 }
-alias remove_whitespace="sed -i 's/[[:space:]]*$//'"
+alias remove_whitespace="sed --follow-symlinks -i 's/[[:space:]]*$//'"
