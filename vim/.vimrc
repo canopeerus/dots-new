@@ -55,4 +55,4 @@ highlight Comment cterm=italic
 "  set termguicolors
 "endif
 "set background=dark
-color base16-dracula 
+color base16-dracula
