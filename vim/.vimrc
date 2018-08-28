@@ -30,7 +30,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'arcticestudio/nord-vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
@@ -56,4 +55,4 @@ highlight Comment cterm=italic
 "  set termguicolors
 "endif
 "set background=dark
-colorscheme nord
+color base16-default-dark
