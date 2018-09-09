@@ -5,7 +5,7 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.dpi: 96
-XTerm*faceName:Dina:size=9
+XTerm*faceName:Hack:size=9
 XTerm*scrollBar:false
 XTerm*iconFile:/home/canopy/Downloads/App-Terminal-icon.png
 ! Base16 Nord
