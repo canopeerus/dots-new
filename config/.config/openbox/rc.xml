@@ -139,7 +139,7 @@
   <resize>
 r   <drawContents>yes</drawContents>
     <popupShow>Nonpixel</popupShow>
-    <!-- 'Always', 'Never', or 'Nonpixel' (xterms and such) -->
+    <!-- 'Always', 'Never', or 'Nonpixel' (sts and such) -->
     <popupPosition>Center</popupPosition>
     <!-- 'Center', 'Top', or 'Fixed' -->
     <popupFixedPosition><!-- these are used if popupPosition is set to 'Fixed' --><x>10</x><!-- positive number for distance from left edge, negative number for
@@ -408,7 +408,7 @@ r   <drawContents>yes</drawContents>
           <enabled>false</enabled>
           <name>urxvt</name>
         </startupnotify>
-        <command>xterm</command>
+        <command>st</command>
       </action>
     </keybind>
     <keybind key="W-0">
