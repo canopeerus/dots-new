@@ -16,6 +16,7 @@ set backspace=indent,eol,start
 let mapleader = ","
 let g:gruvbox_bold=1
 let g:gruvbox_contrast_dark='medium'
+let g:gruvbox_italic=1
 nmap <leader>ne :NERDTreeToggle<cr>
 nmap <leader>nf :NERDTreeFocus<cr>
 map ; :
