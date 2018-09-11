@@ -2,4 +2,4 @@ rofi.theme:/home/canopy/src/ArchLabs-Themes/Rofi/themes/archlabsdark.rasi
 rofi.lines:5
 rofi.width:25
 rofi.font:Roboto Condensed 10
-rofi.theme: /usr/share/rofi/themes/android_notification.rasi
+rofi.theme: /usr/share/rofi/themes/gruvbox-dark-soft.rasi
