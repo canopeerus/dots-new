@@ -406,11 +406,17 @@ r   <drawContents>yes</drawContents>
       <action name="Execute">
         <startupnotify>
           <enabled>false</enabled>
-          <name>urxvt</name>
+          <name>simple terminal</name>
         </startupnotify>
         <command>st</command>
       </action>
-    </keybind>
+  </keybind>
+  <keybind key="W-b">
+      <action name="Execute">
+          <name>Tint2 toggle</name>
+          <command>toggle-tint2</command>
+      </action>
+  </keybind>
     <keybind key="W-0">
       <action name="ToggleDecorations"/>
     </keybind>
