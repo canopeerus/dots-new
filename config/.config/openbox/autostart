@@ -17,3 +17,7 @@ dunst &
 nm-applet &
 tint2 &
 start-pulseaudio-x11
+xset s off
+xset b off
+xset r rate 220 60
+xset -dpms
