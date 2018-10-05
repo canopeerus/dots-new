@@ -431,11 +431,6 @@ r   <drawContents>yes</drawContents>
         <command>/home/canopy/dots/Scripts/scripts/fancylock</command>
       </action>
     </keybind>
-    <keybind key="W-m">
-      <action name="Execute">
-        <command>tt</command>
-      </action>
-    </keybind>
     <keybind key="W-r">
       <action name="Execute">
         <startupnotify>
