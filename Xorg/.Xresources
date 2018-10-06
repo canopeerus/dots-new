@@ -9,6 +9,7 @@ XTerm*faceName:Hack:size=9
 XTerm*scrollBar:false
 URxvt*iconFile:/home/canopy/Downloads/App-Terminal-icon.png
 URxvt*font:xft:Hack:size=9
+URxvt*letterSpace:-1
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
 ! Description: Retro groove colorscheme generalized
