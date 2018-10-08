@@ -13,7 +13,7 @@
 #fi
 
 ./.fehbg 
-dunst &
+dunst & 1>/dev/null 2>/dev/null
 nm-applet &
 tint2 &
 start-pulseaudio-x11
