@@ -8,3 +8,4 @@ function aps()
 }
 alias remove_whitespace="sed --follow-symlinks -i 's/[[:space:]]*$//'"
 alias neofetch='neofetch --ascii_distro ubuntu_old'
+alias binstall='make && make install PREFIX=$HOME'

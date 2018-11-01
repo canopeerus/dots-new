@@ -5,10 +5,10 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.dpi: 96
-XTerm*faceName:Hack:size=9
+XTerm*faceName:uushi:size=9
 XTerm*scrollBar:false
 URxvt*iconFile:/home/canopy/Downloads/App-Terminal-icon.png
-URxvt*font:xft:Hack:size=9
+URxvt*font:xft:uushi:size=9
 URxvt*letterSpace:-1
 ! -----------------------------------------------------------------------------
 ! File: gruvbox-dark.xresources
