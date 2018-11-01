@@ -3,7 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 source /etc/bash_completion
-alias ls='ls --color=auto -CF --group-directories-first'
+alias ls='/bin/ls --color=auto -CF --group-directories-first'
 export PS1=" \[\e[00;34m\]$ \W \[\e[0m\]"
 alias e=editor
 alias se='sudoedit'
