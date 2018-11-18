@@ -5,7 +5,7 @@ Xft.hinting: true
 Xft.hintstyle: hintslight
 Xft.rgba: rgb
 Xft.dpi: 96
-XTerm*faceName:uushi:size=9
+XTerm*faceName:Ubuntu Mono derivative Powerline:size=12
 XTerm*scrollBar:false
 URxvt*iconFile:/home/canopy/Downloads/App-Terminal-icon.png
 URxvt*font:xft:uushi:size=9
