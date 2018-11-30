@@ -146,7 +146,7 @@ launcher_item_app = /usr/share/applications/xfce4-appfinder.desktop
 
 #-------------------------------------
 # Clock
-time1_format = %H:%M    %b %d
+time1_format = %H:%M %p 
 time2_format = 
 time1_font = San Francisco Display Medium 10
 time1_timezone = 

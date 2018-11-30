@@ -406,7 +406,7 @@ r   <drawContents>yes</drawContents>
       <action name="Execute">
         <startupnotify>
           <enabled>false</enabled>
-          <name>simple terminal</name>
+          <name>st</name>
         </startupnotify>
         <command>st</command>
       </action>

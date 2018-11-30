@@ -17,6 +17,8 @@ function ws()
 if [ $TERM = "st-256color" ]; then
     xseticon -id $WINDOWID ~/Downloads/App-Terminal-icon.png
 fi
+export LESSOPEN="| /usr/share/source-highlight/src-hilite-lesspipe.sh %s"
+export LESS=" -R "
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ionlogin='elinks https://mahe2.dvois.com/24online/webpages/client.jsp'
