@@ -14,9 +14,6 @@ syntax on
 set hidden
 set backspace=indent,eol,start
 let mapleader = ","
-let g:gruvbox_bold=1
-let g:gruvbox_contrast_dark='medium'
-let g:gruvbox_italic=1
 nmap <leader>ne :NERDTreeToggle<cr>
 nmap <leader>nf :NERDTreeFocus<cr>
 map ; :
@@ -33,7 +30,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
-Plugin 'morhetz/gruvbox'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
@@ -58,4 +54,4 @@ highlight Comment cterm=italic
 "  set termguicolors
 "endif
 set background=dark
-colorscheme gruvbox
+colorscheme delek
