@@ -55,3 +55,5 @@ highlight Comment cterm=italic
 "endif
 set background=dark
 colorscheme delek
+let g:airline_theme='solarized'
+let g:airline_solarized_bg='dark'
