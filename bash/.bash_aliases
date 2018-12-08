@@ -8,6 +8,7 @@ function aps()
 }
 alias rw="sed --follow-symlinks -i 's/[[:space:]]*$//'"
 alias binstall='make && make install PREFIX=$HOME'
+alias neofetch='neofetch --ascii_distro ubuntu_old'
 function mcd()
 {
     [ ! -f "$1" ] && mkdir $1
