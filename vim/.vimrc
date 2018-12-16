@@ -55,5 +55,5 @@ highlight Comment cterm=italic
 "  set termguicolors
 "endif
 set background=dark
-colorscheme base16-monokai
-let g:airline_theme='deus'
+colorscheme base16-eighties
+let g:airline_theme='base16'
