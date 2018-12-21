@@ -17,6 +17,12 @@ let mapleader = ","
 nmap <leader>ne :NERDTreeToggle<cr>
 nmap <leader>nf :NERDTreeFocus<cr>
 map ; :
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " set the runtime path to include Vundle and initialize
 let g:airline_powerline_fonts=1
 set rtp+=~/.vim/bundle/Vundle.vim
