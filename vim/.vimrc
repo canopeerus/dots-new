@@ -18,6 +18,16 @@ nmap <leader>ne :NERDTreeToggle<cr>
 nmap <leader>nf :NERDTreeFocus<cr>
 map ; :
 
+" ale linter config
+let g:ale_enabled = 1
+let g:ale_sign_column_always = 1
+let g:ale_linters_explicit = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+" remap keys for split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -42,6 +52,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'chriskempson/base16-vim'
+Plugin 'w0rp/ale'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
