@@ -1,6 +1,6 @@
 function ins()
 {
-    apt list --installed | rg $1 | less
+    apt list --installed | grep $1 | less
 }
 function aps()
 {
@@ -19,3 +19,6 @@ function rgheader
     rg -R $1 /usr/include/
     rg -R $1 /usr/local/include/*
 }
+alias gc='git clone'
+alias pget='sudo apt install'
+alias prem='sudo apt remove --purge'
