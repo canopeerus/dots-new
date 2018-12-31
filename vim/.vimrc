@@ -28,7 +28,8 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 let g:ale_linters = {
-\   'c':['clang'],
+\   'c':['gcc'],
+\   'cpp':['g++'],
 \}
 
 " remap keys for split navigation
