@@ -1,0 +1,14 @@
+[user]
+	email = visvanathannaditya@gmail.com
+    name = Aditya Visvanathan
+    username = canopeerus
+
+[core]
+    editor = vim
+
+
+[web]
+    browser = firefox
+
+[alias]
+    c = clone
