@@ -1,4 +1,0 @@
-#!/bin/sh
-xinput disable 11
-rofi -show run 2>/dev/null 1>/dev/null
-xinput enable 11
