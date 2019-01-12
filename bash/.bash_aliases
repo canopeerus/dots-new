@@ -14,7 +14,7 @@ function mcd()
     cd $1
 }
 
-function rgheader
+function rgheader()
 {
     rg -R $1 /usr/include/
     rg -R $1 /usr/local/include/*
