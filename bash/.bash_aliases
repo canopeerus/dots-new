@@ -1,6 +1,6 @@
 function ins()
 {
-    apt list --installed | grep $1 | less
+    apt list --installed | grep "$1" | less
 }
 function aps()
 {

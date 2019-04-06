@@ -1,26 +1,39 @@
-! Base colors
-*.foreground: #c0c5ce
-*.background: #919ba0
-*.cursorColor: #c0c5ce
+! special
+*.foreground:   #d2d4de
+*.background:   #161821
+*.cursorColor:  #d2d4de
 
-*.color0: #919ba0
-*.color1: #bf616a
-*.color2: #a3be8c
-*.color3: #ebcb8b
-*.color4: #8fa1b3
-*.color5: #b48ead
-*.color6: #96b5b4
-*.color7: #65737e
+! black
+*.color0:       #161821
+*.color8:       #6b7089
 
-*.color8: #65737e
-*.color9: #bf616a
-*.color10: #a3be8c
-*.color11: #ebcb8b
-*.color12: #8fa1b3
-*.color13: #b48ead
-*.color14: #96b5b4
-*.color15: #F6F6F6
+! red
+*.color1:       #e27878
+*.color9:       #e98989
 
+! green
+*.color2:       #b4be82
+*.color10:      #c0ca8e
+
+! yellow
+*.color3:       #e2a478
+*.color11:      #e9b189
+
+! blue
+*.color4:       #84a0c6
+*.color12:      #91acd1
+
+! magenta
+*.color5:       #a093c7
+*.color13:      #ada0d3
+
+! cyan
+*.color6:       #89b8c2
+*.color14:      #95c4ce
+
+! white
+*.color7:       #c6c8d1
+*.color15:      #d2d4de
 ! Rofi
 rofi.padding: 20
 rofi.line-padding: 2
