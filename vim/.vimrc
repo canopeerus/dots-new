@@ -58,6 +58,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'w0rp/ale'
 Plugin 'chriskempson/base16-vim'
+Plugin 'dracula/vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -73,5 +74,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 highlight Comment cterm=italic
-colorscheme base16-default-dark
-let g:airline_theme='base16'
+set t_Co=256
+set background=dark
+set termguicolors
+set t_8f=[38;2;%lu;%lu;%lum
+set t_8b=[48;2;%lu;%lu;%lum
+colorscheme dracula
+let g:airline_theme='dracula'
