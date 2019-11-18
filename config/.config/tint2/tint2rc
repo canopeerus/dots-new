@@ -179,7 +179,6 @@ battery_mclick_command =
 battery_uwheel_command = 
 battery_dwheel_command = 
 ac_connected_cmd = notify-send "Plugged in" 
-ac_disconnected_cmd = notify-send "Power unplugged"
 
 #-------------------------------------
 # Tooltip

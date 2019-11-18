@@ -25,3 +25,4 @@ alias prem='sudo apt remove --purge'
 if grep -i "ubuntu" /etc/os-release 1>/dev/null; then
     alias neofetch="neofetch --ascii_distro ubuntu_old"
 fi
+alias devrun="ENV=prod flask run"
