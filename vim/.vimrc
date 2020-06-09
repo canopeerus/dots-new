@@ -33,11 +33,19 @@ let g:ale_linters = {
 \   'html':['tidy']
 \}
 
+" typescript plugin config
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = ''
+autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+
 " remap keys for split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+"gruvbox config
+let g:gruvbox_contrast_dark = 'medium'
 
 " set the runtime path to include Vundle and initialize
 let g:airline_powerline_fonts=1
@@ -58,8 +66,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'w0rp/ale'
-Plugin 'chriskempson/base16-vim'
-Plugin 'dracula/vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'leafgarland/typescript-vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -80,5 +88,5 @@ set background=dark
 set termguicolors
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
-colorscheme dracula
-let g:airline_theme='dracula'
+let g:airline_theme='gruvbox'
+colorscheme gruvbox
