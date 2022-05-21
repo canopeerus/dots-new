@@ -22,6 +22,7 @@ map ; :
 let g:ale_enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_linters_explicit = 1
+let g:ale_completion_enabled = 1
 let g:airline#extensions#ale#enabled = 1
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
@@ -45,7 +46,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 "gruvbox config
-let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_contrast_dark = 'hard'
 
 " set the runtime path to include Vundle and initialize
 let g:airline_powerline_fonts=1
@@ -66,8 +67,9 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'w0rp/ale'
-Plugin 'morhetz/gruvbox'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'prabirshrestha/vim-lsp'
+Plugin 'dracula/vim',{'name':'dracula'}
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -88,5 +90,27 @@ set background=dark
 set termguicolors
 set t_8f=[38;2;%lu;%lu;%lum
 set t_8b=[48;2;%lu;%lu;%lum
-let g:airline_theme='gruvbox'
-colorscheme gruvbox
+let g:airline_theme='bubblegum'
+colorschem dracula
+
+
+" cursor config
+set cursorline
+hi CursorLine ctermbg=235
+highlight Cursor guifg=white guibg=black
+highlight iCursor guifg=white guibg=steelblue
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i:ver100-iCursor
+set guicursor+=n-v-c:blinkon0
+set guicursor+=i:blinkwait10
+
+" Register ccls C++ lanuage server.
+if executable('ccls')
+   au User lsp_setup call lsp#register_server({
+      \ 'name': 'ccls',
+      \ 'cmd': {server_info->['ccls']},
+      \ 'root_uri': {server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'compile_commands.json'))},
+      \ 'initialization_options': {'cache': {'directory': expand('~/.cache/ccls') }},
+      \ 'allowlist': ['c', 'cpp', 'objc', 'objcpp', 'cc'],
+      \ })
+endif
