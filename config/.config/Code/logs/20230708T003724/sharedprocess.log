@@ -1,0 +1,7 @@
+2023-07-08 00:38:11.802 [info] Getting Manifest... dracula-theme.theme-dracula
+2023-07-08 00:38:11.807 [info] Installing extension: dracula-theme.theme-dracula
+2023-07-08 00:38:12.543 [warning] Extension signature verification failed with error 'UnknownError': dracula-theme.theme-dracula
+2023-07-08 00:38:12.562 [info] Extracted extension to /home/canopy/.vscode/extensions/.c4d67bb1-545d-40b6-a22d-f3ced27ef33c: dracula-theme.theme-dracula
+2023-07-08 00:38:12.573 [info] Renamed to /home/canopy/.vscode/extensions/dracula-theme.theme-dracula-2.24.2
+2023-07-08 00:38:12.574 [info] Extracting extension completed. dracula-theme.theme-dracula
+2023-07-08 00:38:12.588 [info] Extension installed successfully: dracula-theme.theme-dracula

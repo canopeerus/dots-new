@@ -1,0 +1,9 @@
+font:
+  normal:
+    family: Fantasque Sans Mono
+  bold:
+    family: Fantasque Sans Mono
+  italic:
+    family: Fantasque Sans Mono
+import:
+  - ~/.config/alacritty/themes/themes/dracula.yaml

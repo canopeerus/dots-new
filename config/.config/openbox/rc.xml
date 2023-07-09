@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>ArchLabs-Light</name>
+    <name>ArchLabs-Dark</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -417,7 +417,7 @@ r   <drawContents>yes</drawContents>
           <enabled>false</enabled>
           <name>st</name>
         </startupnotify>
-        <command>st</command>
+        <command>alacritty</command>
       </action>
     </keybind>
     <keybind key="W-b">
@@ -432,7 +432,7 @@ r   <drawContents>yes</drawContents>
     <keybind key="W-space">
       <action name="Execute">
         <name>rofi</name>
-        <command>rofi-no-mouse</command>
+        <command>rofi -show run</command>
       </action>
     </keybind>
     <keybind key="W-S-l">

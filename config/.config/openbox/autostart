@@ -1,4 +1,4 @@
-#
+
 # These things are run when an Openbox X Session is started.
 # You may place a similar script in $HOME/.config/openbox/autostart
 # to run user-specific things.
@@ -12,12 +12,11 @@
 #  gnome-settings-daemon &
 #fi
 
-./.fehbg 
 dunst & 1>/dev/null 2>/dev/null
-nm-applet &
-tint2 &
-start-pulseaudio-x11
 xset s off
 xset b off
 xset r rate 220 60
 xset -dpms
+sh /home/canopy/.screenlayout/monitorsettings.sh
+sh /home/canopy/.fehbg
+polybar &
